@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags for SEO and accessibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of cars with our multimedia-rich one-page site dedicated to automotive enthusiasts.">
+    <meta name="keywords" content="Cars, Vehicles, Auto Shop, Car Reviews, Automotive">
+    <meta name="author" content="Student Name">
+
+    <!-- Title and Favicon -->
+    <title>Master Auto - Car Enthusiasts Hub</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Orbitron&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css smester 2.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Master Auto Logo" id="logo">
+        <h1>Master Auto</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#models">Top Models</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Welcome to Master Auto</h2>
+        <p>                         Discover all cars, all strong beautiful things here in our website.</p>
+
+        <!-- Video Embed -->
+        <video controls>
+            <source src="video/car-showcase.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Audio Embed -->
+        <audio controls>
+            <source src="audio/engine-rev.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Car Models Section -->
+    <section id="models">
+        <h2>Top Car Models</h2>
+        <article class="menu-columns">
+            <h3>Popular Picks</h3>
+            <p><strong>Mustang GT:</strong> American muscle with unmatched performance.</p>
+            <p><strong>Tesla Model S:</strong> Futuristic electric drive with top-tier tech.</p>
+            <p><strong>Lamborghini Huracan:</strong> Exotic speed and design excellence.</p>
+        </article>
+
+        <!-- HTML5 Interactive Elements -->
+        <figure>
+            <img src="images/mustang.jpg" alt="Mustang GT">
+            <figcaption>Ford Mustang GT - Classic American Power</figcaption>
+        </figure>
+
+        <details>
+            <summary>What makes a supercar?</summary>
+            <p>Supercars feature advanced aerodynamics, lightweight materials, and engines over 500 horsepower.</p>
+        </details>
+
+        <label for="build-progress">Customization Progress:</label>
+        <progress id="build-progress" value="50" max="100">50%</progress>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Car Knowledge Quiz</h2>
+        <form id="carQuiz">
+            <p>Which car brand originated in Germany?</p>
+            <input type="radio" name="q1" value="BMW"> BMW<br>
+            <input type="radio" name="q1" value="Toyota"> Toyota<br>
+            <input type="radio" name="q1" value="Ford"> Ford<br>
+            <p id="quiz-feedback"></p>
+            <button type="button" onclick="checkQuiz()">Submit Answer</button>
+        </form>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Master Auto. All rights reserved.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
